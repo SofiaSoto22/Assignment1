@@ -1,2 +1,2 @@
-# Assignment1
-First coding assignment
+# Coding-Assignments
+Coding assigmentes of Coursera Course
