@@ -1,0 +1,51 @@
+
+h1, p, label {
+	color: white;
+}
+select, option, button {
+	color: black;
+}
+h1 {
+	font-size: 60px;
+	padding: 30px;
+	text-align: center;
+}
+p {
+	margin: 40px;
+	text-align: center;
+}
+#quoteBox {
+	padding: 30px;
+	text-align: center;
+}
+label, select {
+	margin: 20px;
+	text-align: center;
+	position: relative;
+	left: 500px;
+}
+button {
+	position: relative;
+	left: 640px;
+	border-radius: 8px;
+	padding: 8px 15px;
+	border: 2px solid #595959;
+	transition-duration: 0.5s;
+    cursor: pointer;
+}
+button:hover {
+  background-color: #595959;
+  color: white;
+}
+
+body {
+	background-color: black
+
+}
+#imageBox {
+	background-color: black;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center
+}
