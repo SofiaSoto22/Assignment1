@@ -8,28 +8,35 @@
 	<link rel="stylesheet" href="quotes.css">
 </head>
 <body>
-	<div id="imageBox"> 
-		<div>
-			<h1>Quote Generator</h1>
-			<p>Welcome to Quote Generator, an insightful web where you can get your daily dose of inspiration from the greatest thinkers of all times. You just have to click below, read and kick of your day! </p>
-			<label for="authors">Choose an author:</label>
-			<select class="dropdown" name="authors" id="authors">
-				<option value="Select">Pick one</option>
-				<option value="Jean-Paul Sartre">Jean-Paul Sartre</option>
-				<option value="Epictetus">Epictetus</option>
-				<option value="Albert Camus">Albert Camus</option>
-				<option value="Friedrich Nietzsche">Friedrich Nietzsche</option>
-				<option value="Bertrand Russell">Bertrand Russell</option>
-				<option value="Mencius">Mencius</option>
-				<option value="Baltasar Gracian">Baltasar Gracian</option>
+	<div>
+		<h1>Quote Generator</h1>
+		<p>Welcome to Quote Generator, an insightful web where you can get your daily dose of inspiration from the greatest thinkers of all times. You just have to click below, read and kick of your day! </p>
 
-			</select> <br>
-			<button onclick="randomQuote()">Display!</button>
-			<p id="quoteBox" > </p>
+		<p>Choose an author:</p>
+		<select name="authors" id="authorsList"> 
+		</select>
+		<div>
+			<p>How many more authors do you want? </p> 
+			<select id="limitByUser">
+				<option value="50">50</option>
+				<option value="40">40</option> 
+				<option value="30">30</option> 
+				<option value="20">20</option>
+				<option value="10">10</option>
+			</select>
+			<button id="addMore" onclick="getAuthor()">Add them!</button>
 		</div>
+		<div id="cuenta">Wooww! Now you have <span id="total"></span> authors in your list</div>
+
+		<button onclick="getQuote()">Display Quote!</button>
+		
+		<p type="text" id="quoteBox" > </p>
+		<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Copy" onclick="copiaPega()">Copy Quote</button>
+
 	</div>
 
-
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	<script src="quotes.js"></script>
 </body>
